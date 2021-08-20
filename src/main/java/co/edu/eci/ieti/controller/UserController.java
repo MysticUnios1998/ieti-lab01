@@ -32,7 +32,7 @@ public class UserController {
         return new ResponseEntity<>(userOptional.orElse(new User()), HttpStatus.OK);
     }
 
-    @PostMapping("/")
+    @PostMapping()
     public ResponseEntity<?> create(@RequestBody UserDto userDto) {
         var createdUser = userService.create(UserMapper.toUser(userDto));
         return new ResponseEntity<>(createdUser, HttpStatus.CREATED);

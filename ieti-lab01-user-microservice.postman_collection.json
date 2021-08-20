@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "50fc4c83-a255-40f9-a5e4-31a0524e8ace",
+		"name": "ieti-lab01-user-microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/v1/user/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/v1/user/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"all"
+					]
+				},
+				"description": "Get all users in the system"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"eduard\",\n    \"lastName\": \"arias\",\n    \"email\": \"eduard@mail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/api/v1/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				},
+				"description": "Create new user"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/user/",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Carlos\",\n    \"lastName\": \"Santana\",\n    \"email\": \"carlos-santana@mail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:80/api/v1/user/8668694228",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"8668694228"
+					]
+				},
+				"description": "Update an existing user"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/user/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/v1/user/8668694228",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"8668694228"
+					]
+				},
+				"description": "Get info of existing user by its id"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/user/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:80/api/v1/user/8668694228",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"8668694228"
+					]
+				},
+				"description": "Delete existing user by its id"
+			},
+			"response": []
+		}
+	]
+}

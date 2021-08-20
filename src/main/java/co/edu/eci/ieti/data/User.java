@@ -18,4 +18,13 @@ public class User {
     private String email;
     private Date createAt;
 
+    @Override
+    public boolean equals(Object object) {
+        return equals((User) object);
+    }
+
+    public boolean equals(User user) {
+        return id.equals(user.getId());
+    }
+
 }
